@@ -28,7 +28,7 @@ export interface NavItem {
 export const NAV_ITEMS: NavItem[] = [
   {
     preview: <SubscribeButton />,
-    name: "Button",
+    name: "Button Hover",
     url: "/",
     icon: <LayoutDashboardIcon />,
     code: `
@@ -72,7 +72,7 @@ export const SubscribeButton = () => {
   },
   {
     preview: <HoverAnimatedCard />,
-    name: "Card",
+    name: "Card Hover and Exit",
     url: "/",
     icon: <CuboidIcon />,
     code: `
@@ -147,7 +147,7 @@ export const Card = () => {
   },
   {
     preview: <DashboardPage />,
-    name: "Variants",
+    name: "Reusable Variants + Staggered",
     url: "/dashboard",
     icon: <BarChart3 />,
     code: `
@@ -293,7 +293,7 @@ function NavItem({ icon, label, open }) {
   },
   {
     preview: <MotionHooks />,
-    name: "Motion Hooks",
+    name: "Motion Hooks (scroll, spring, transform)",
     url: "/motion-hooks",
     icon: <IconRocket />,
     code: `
@@ -462,7 +462,7 @@ const features = [
   },
   {
     preview: <LayoutCards />,
-    name: "Layout Cards",
+    name: "Card Animation - LayoutId",
     url: "/layout-cards",
     icon: <LayoutGridIcon />,
     code: `
@@ -613,7 +613,7 @@ export const LayoutCards = () => {
   },
   {
     preview: <NavbarLayout />,
-    name: "Navbar",
+    name: "Navbar Hover - similar LayoutId",
     url: "/navbar",
     icon: <Navigation />,
     code: `
@@ -661,7 +661,7 @@ export const Navbar = () => {
   },
   {
     preview: <TextAnimation />,
-    name: "Text",
+    name: "Blurred Staggered Text - useAnimate",
     url: "/#text",
     icon: <Text />,
     code: `
@@ -727,7 +727,7 @@ export const TextAnimation = () => {
   },
   {
     preview: <PaymentButton />,
-    name: "Payment Button",
+    name: "Payment Processing - useAnimate",
     url: "/payment-button",
     icon: <IndianRupeeIcon />,
     code: `
