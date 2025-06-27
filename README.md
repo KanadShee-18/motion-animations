@@ -51,3 +51,13 @@
 - Animated loaders, navbars, modals
 
 - Micro-interactions and hover effects
+
+---
+
+## LICENSE:
+
+- [LICENSE](LICENSE)
+
+---
+
+> If You got any help kindly give a star ☺️.
