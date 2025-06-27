@@ -29,8 +29,8 @@ export const SectionNav = () => {
   const [activeTab, setActiveTab] = useState<"code" | "preview">("preview");
   return (
     <div className="relative w-full lg:max-w-4xl mx-auto">
-      <aside className="w-full min-h-full md:border-b border-indigo-900 p-4 bg-background/5 backdrop-blur-md shadow-md space-y-2 divide-y divide-secondary flex flex-col lg::flex-row lg:flex-wrap">
-        <h2 className="mb-5 text-primary text-3xl font-semibold">
+      <aside className="w-full min-h-full md:border-b border-indigo-900 bg-background/5 backdrop-blur-md shadow-md space-y-2 divide-y divide-secondary flex flex-col lg::flex-row lg:flex-wrap">
+        <h2 className="mb-5 text-primary md:text-3xl text-xl font-semibold">
           Animated Components{" "}
         </h2>
         {NAV_ITEMS.map((section, index) => (
@@ -42,7 +42,7 @@ export const SectionNav = () => {
               setActiveComponent(section);
             }}
             className={cn(
-              `flex items-center justify-start text-sm group 
+              `flex items-center justify-start scrollbar-hide overflow-x-hidden text-sm group 
              `,
               activeIndex !== index && "text-secondary-foreground"
             )}
@@ -54,8 +54,8 @@ export const SectionNav = () => {
           </Button>
         ))}
       </aside>
-      <main className="p-6 flex-1 pb-20">
-        <div className="flex items-center w-fit p-1 rounded-full mb-5 bg-secondary/50">
+      <main className=" flex-1 pb-20">
+        <div className="flex items-center w-fit p-1 rounded-full mb-5 bg-secondary/50 mt-7">
           <button
             onClick={() => setActiveTab("code")}
             className={cn(
@@ -98,7 +98,7 @@ export const SectionNav = () => {
 
           {activeComponent && activeTab === "preview" && (
             <div className="flex flex-col gap-y-3">
-              <h2 className="text-3xl text-primary font-bold">
+              <h2 className="text-xl md:text-3xl text-primary font-bold">
                 Preview: {activeComponent.name}
               </h2>
               <div>{activeComponent.preview}</div>
